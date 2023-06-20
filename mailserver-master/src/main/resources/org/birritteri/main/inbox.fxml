@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="612.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.birritteri.main.ClientController">
+    <children>
+        <Button layoutX="846.0" layoutY="14.0" mnemonicParsing="false" onAction="#onWriteButtonClick" prefHeight="48.0" prefWidth="55.0" text="Write" />
+        <ScrollPane layoutX="14.0" layoutY="72.0" prefHeight="516.0" prefWidth="888.0">
+            <content>
+                <VBox fx:id="vBoxEmails" prefHeight="514.0" prefWidth="886.0" />
+            </content>
+        </ScrollPane>
+      <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Label fx:id="serverResponse" layoutX="14.0" layoutY="590.0" prefHeight="17.0" prefWidth="888.0" text="Server: " />
+      <AnchorPane fx:id="msgReceived" layoutX="122.0" layoutY="19.0" prefHeight="38.0" prefWidth="294.0" visible="false">
+         <children>
+            <Circle fill="#1ffffd" layoutX="22.0" layoutY="19.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="38.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a new message!">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="785.0" layoutY="14.0" mnemonicParsing="false" onAction="#updateInbox" prefHeight="48.0" prefWidth="55.0" text="Update" />
+    </children>
+</AnchorPane>

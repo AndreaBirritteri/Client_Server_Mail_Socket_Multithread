@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="694.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.birritteri.main.EmailController">
+   <children>
+      <Button layoutX="927.0" layoutY="14.0" mnemonicParsing="false" onAction="#onReplyAllClick" prefHeight="35.0" prefWidth="95.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="27.0">
+               <image>
+                  <Image url="@images/replyAll.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="837.0" layoutY="56.0" mnemonicParsing="false" onAction="#onForwardClick" prefHeight="35.0" prefWidth="84.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="29.0">
+               <image>
+                  <Image url="@images/forward.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="926.0" layoutY="56.0" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="35.0" prefWidth="95.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="27.0">
+               <image>
+                  <Image url="@images/bin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="837.0" layoutY="14.0" mnemonicParsing="false" onAction="#onReplyClick" prefHeight="35.0" prefWidth="84.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="31.0">
+               <image>
+                  <Image url="@images/reply.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="32.0" layoutY="18.0" text="From:" />
+      <Label layoutX="47.0" layoutY="45.0" text="To:" />
+      <Label layoutX="28.0" layoutY="73.0" text="Object:" />
+      <Label layoutX="37.0" layoutY="101.0" prefHeight="17.0" prefWidth="38.0" text="Body:" />
+      <TextArea fx:id="bodyReader" editable="false" layoutX="75.0" layoutY="101.0" prefHeight="580.0" prefWidth="947.0" />
+      <TextField fx:id="objReader" editable="false" layoutX="74.0" layoutY="69.0" prefHeight="25.0" prefWidth="750.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="sendToReader" editable="false" layoutX="74.0" layoutY="41.0" prefHeight="25.0" prefWidth="750.0" />
+      <TextField fx:id="fromReader" editable="false" layoutX="74.0" layoutY="14.0" prefHeight="25.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>

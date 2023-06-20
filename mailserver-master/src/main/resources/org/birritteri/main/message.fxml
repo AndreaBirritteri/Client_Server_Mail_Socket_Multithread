@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="694.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.birritteri.main.ClientController">
+    <children>
+        <TextField fx:id="sendTo" layoutX="61.0" layoutY="29.0" prefHeight="25.0" prefWidth="801.0" />
+        <Label layoutX="41.0" layoutY="33.0" prefHeight="17.0" prefWidth="20.0" text="To:" />
+        <Label layoutX="20.0" layoutY="71.0" prefHeight="17.0" prefWidth="54.0" text="Object:" />
+        <TextField fx:id="object" layoutX="61.0" layoutY="67.0" prefHeight="25.0" prefWidth="801.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </TextField>
+        <TextArea fx:id="body" layoutX="61.0" layoutY="103.0" prefHeight="580.0" prefWidth="963.0" />
+        <Button layoutX="869.0" layoutY="29.0" mnemonicParsing="false" onAction="#onSendButtonClick" prefHeight="63.0" prefWidth="155.0" text="Invia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="emailError" layoutX="62.0" layoutY="6.0" text="Una o più email sono errate!" textFill="RED" visible="false" />
+    </children>
+</AnchorPane>

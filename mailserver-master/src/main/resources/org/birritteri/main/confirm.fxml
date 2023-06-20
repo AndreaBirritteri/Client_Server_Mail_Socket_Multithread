@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="confirm" prefHeight="128.0" prefWidth="257.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="org.birritteri.main.ClientController">
+    <Text layoutX="26.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Sei sicuro di voler inviare il messaggio?"/>
+    <Button layoutX="26.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="88.0" text="Si"/>
+    <Button layoutX="144.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0"
+            prefWidth="88.0" text="No"/>
+</AnchorPane>
